@@ -8,6 +8,10 @@ interface Note {
   content: string;
 }
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
+
 function NoteList({ notes }: { notes: Note[] }) {
   return (
     <ul id="note-list">
@@ -42,7 +46,3 @@ function NoteList({ notes }: { notes: Note[] }) {
 }
 
 export default NoteList;
-
-export function links() {
-  return [{ rel: "stylesheet", href: styles }];
-}

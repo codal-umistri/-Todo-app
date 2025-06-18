@@ -1,5 +1,9 @@
 import styles from "./NewNote.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
+
 function NewNote() {
   return (
     <form method="post" id="note-form">
@@ -19,7 +23,3 @@ function NewNote() {
 }
 
 export default NewNote;
-
-export function links() {
-  return [{ rel: "stylesheet", href: styles }];
-}
